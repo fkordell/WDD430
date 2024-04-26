@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="relative">
+        <div id="menuButton" class="flex flex-col space-y-1.5 m-4 cursor-pointer ml-96 mt-10 w-8">
+            <span class="block w-8 h-0.5 bg-black transform transition duration-300"></span>
+            <span class="block w-8 h-0.5 bg-black transform transition duration-300"></span>
+            <span class="block w-8 h-0.5 bg-black transform transition duration-300"></span>
+        </div>
+        <nav id="slidingMenu" class="fixed top-0 left-0 w-48 h-64 mt-32 bg-gray-400 opacity-85 transform -translate-x-full ease-in-out transition-all duration-300 z-40">
+            <ul class="p-8">
+                <li><a href="#home" class="block p-2 text-black hover:bg-gray-200">Home</a></li>
+                <li><a href="#product" class="block p-2 text-black hover:bg-gray-200">Product</a></li>
+                <li><a href="#about" class="block p-2 text-black hover:bg-gray-200">About</a></li>
+                <li><a href="#contact" class="block p-2 text-black hover:bg-gray-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="">
+        <h1 class="text-5xl font-extrabold underline text-center">
+          Contact Info
+        </h1>
+        <form id="infoForm" class="border-4 border-black p-10 mt-10 w-1/2 m-auto">
+            <fieldset class="flex flex-col">
+                <label for="fname" class="font-bold text-xl">First Name</label>
+                <input type="text" name="first name" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white text-p-2" placeholder="type here" required minlength="3">
+                <label for="lname" class="font-bold text-xl">Last Name</label>
+                <input type="text" name="last name" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required minlength="3">
+                <label for="email" class="font-bold text-xl">E-mail</label>
+                <input type="text" name="email" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <label for="address" class="font-bold text-xl">Street Address</label>
+                <input type="text" name="address" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required>
+                <label for="phone" class="font-bold text-xl">Phone Number</label>
+                <input type="text" name="phone number" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required>
+                <button type="submit" id="submitBtn" class="border-2 w-36 p-2 mt-2 hover:border-black">Submit</button>
+            </fieldset>
+        </form>
+    </main>   
+        
+  <script src="index.js"></script>
+</body>
+</html>
