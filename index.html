@@ -32,11 +32,11 @@
                 <label for="lname" class="font-bold text-xl">Last Name</label>
                 <input type="text" name="last name" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required minlength="3">
                 <label for="email" class="font-bold text-xl">E-mail</label>
-                <input type="text" name="email" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <input type="text" name="email" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="123@gmail.com" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                 <label for="address" class="font-bold text-xl">Street Address</label>
                 <input type="text" name="address" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required>
                 <label for="phone" class="font-bold text-xl">Phone Number</label>
-                <input type="text" name="phone number" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="type here" required>
+                <input type="tel" name="phone" class="invalid:bg-red-500 valid:bg-green-400 valid:text-black placeholder:text-white placeholder:p-2 text-white" placeholder="123-456-7890" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 <button type="submit" id="submitBtn" class="border-2 w-36 p-2 mt-2 hover:border-black">Submit</button>
             </fieldset>
         </form>
